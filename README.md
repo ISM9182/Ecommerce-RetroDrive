@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# RetroDrive Autopeças
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é uma Single Page Application (SPA) para uma loja de autopeças, desenvolvida com React e TypeScript. O aplicativo gerencia produtos, categorias, fornecedores e clientes.
 
-## Available Scripts
+**Observação:** As funcionalidades de dados (visualização, adição, edição, exclusão) **requerem que o backend da API (`json-server`) esteja rodando localmente** para funcionar. O site no GitHub Pages serve apenas o frontend estático.
 
-In the project directory, you can run:
+## Índice
 
-### `npm start`
+* [Estrutura do Projeto](#estrutura-do-projeto)
+* [Como Executar o Projeto Localmente](#como-executar-o-projeto-localmente)
+    * [Pré-requisitos](#pré-requisitos)
+    * [Instalação](#instalação)
+    * [Execução](#execução)
+* [Deploy](#deploy)
+* [Contato](#contato)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Estrutura do Projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+my-ecommerce-spa/
+├── public/                 # Arquivos estáticos (index.html, favicons, etc.)
+├── src/                    # Código-fonte da aplicação React
+│   ├── components/         # Componentes React
+│   │   └── NavBar/
+│   ├── context/            # Contextos React (e.g., ProductContext)
+│   ├── pages/              # Páginas da aplicação (e.g., HomePage, ProductsPage)
+│   ├── routes/             # Definição de rotas (AppRoutes.tsx)
+│   ├── services/           # Lógica de comunicação com a API (e.g., api.ts)
+│   ├── types/              # Definições de tipos TypeScript
+│   ├── App.tsx             # Componente principal
+│   ├── index.tsx           # Ponto de entrada
+│   ├── global.css          # Estilos globais
+│   └── react-app-env.d.ts  # Arquivo de ambiente TypeScript
+├── db.json                 # Dados para o json-server
+├── package.json            # Metadados do projeto e scripts npm
+├── package-lock.json       # Informações detalhadas das dependências
+├── tsconfig.json           # Configurações do TypeScript
+└── README.md               # Este arquivo README
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Executar o Projeto Localmente
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Certifique-se de ter o [Node.js](https://nodejs.org/en/download/) (que inclui o npm) instalado em sua máquina.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/ISM9182/Ecommerce-RetroDrive.git](https://github.com/ISM9182/Ecommerce-RetroDrive.git)
+    ```
+2.  **Navegue até a pasta do projeto (a pasta interna):**
+    ```bash
+    cd Ecommerce-RetroDrive/my-ecommerce-spa
+    ```
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+### Execução
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para que a aplicação funcione completamente, você precisa iniciar o frontend e o backend (API falsa) em terminais separados.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Inicie o Backend (API Falsa) (em um terminal):**
+    Na pasta `my-ecommerce-spa` (a interna do projeto), execute:
+    ```bash
+    json-server --watch db.json --port 5000
+    ```
+    O `json-server` será executado em `http://localhost:5000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2.  **Inicie o Frontend (em um NOVO terminal):**
+    Navegue novamente para a pasta `my-ecommerce-spa` (a interna do projeto):
+    ```bash
+    cd C:\UFC\Disciplina de Web\Trabalho 2\my-ecommerce-spa\my-ecommerce-spa
+    ```
+    Em seguida, execute:
+    ```bash
+    npm start
+    ```
+    Isso abrirá o aplicativo React em `http://localhost:3000`.
+## Deploy
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+O site estático está implantado no [GitHub Pages](https://ism9182.github.io/Ecommerce-RetroDrive/).
 
-## Learn More
+## Contato
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Nome:** Ismael
+* **GitHub:** [https://github.com/ISM9182](https://github.com/ISM9182)
