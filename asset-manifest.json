@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ecommerce-RetroDrive/static/css/main.28fb3537.css",
+    "main.js": "/Ecommerce-RetroDrive/static/js/main.dc7a853c.js",
+    "index.html": "/Ecommerce-RetroDrive/index.html",
+    "main.28fb3537.css.map": "/Ecommerce-RetroDrive/static/css/main.28fb3537.css.map",
+    "main.dc7a853c.js.map": "/Ecommerce-RetroDrive/static/js/main.dc7a853c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28fb3537.css",
+    "static/js/main.dc7a853c.js"
+  ]
+}
