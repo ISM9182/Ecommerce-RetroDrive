@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "name": "Tênis de corrida",
+      "description": "blablaaaa",
+      "price": 400,
+      "quantity": 2,
+      "color": "braco",
+      "category": "freios",
+      "supplier": "fornecedorB",
+      "id": "4c36"
+    },
+    {
+      "id": "e329",
+      "name": "gsfg",
+      "description": "fsdsdfs",
+      "price": 444,
+      "quantity": 5,
+      "color": "sdfs",
+      "category": "freios",
+      "supplier": "fornecedorA"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Eletrônicos",
+      "description": "Produtos eletrônicos em geral.",
+      "id": "cat1"
+    },
+    {
+      "id": "cat2",
+      "name": "Acessórios",
+      "description": "Acessórios para diversos produtos."
+    },
+    {
+      "id": "46dc",
+      "name": "dhdhh",
+      "description": "vvvvvvv"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup1",
+      "name": "Fornecedor A",
+      "contact": "contato@fornecedora.com",
+      "address": "Rua Exemplo, 123"
+    },
+    {
+      "id": "sup2",
+      "name": "Fornecedor B",
+      "contact": "555-1234",
+      "address": "Avenida Teste, 456"
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Ismael Martins",
+      "email": "ismael.martins@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Maria Silva",
+      "email": "maria.silva@example.com"
+    }
+  ]
+}
